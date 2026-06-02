@@ -31,3 +31,13 @@ The Joint State action graph publishes the robot joint states to ROS 2 and subsc
 *Figure 3. Joint State action graph used to publish and receive joint state data in Isaac Sim.*
 
 See the full description in [JointState_Pub_Sub/ROS2_JointState.md](JointState_Pub_Sub/ROS2_JointState.md).
+
+## 4. Camera
+
+The ROS 2 Camera action graph publishes camera data from Isaac Sim to ROS 2. It uses the playback tick, one simulation frame step, render product creation, ROS 2 context, and camera helper node to stream image data through the ROS 2 bridge.
+
+![ROS 2 Camera action graph in Isaac Sim](ROS2_Camera/ros2_camera_graph.png)
+
+*Figure 4. ROS 2 Camera action graph used to publish camera output from Isaac Sim.*
+
+See the full description in [ROS2_Camera/ROS2_Camera.md](ROS2_Camera/ROS2_Camera.md).
