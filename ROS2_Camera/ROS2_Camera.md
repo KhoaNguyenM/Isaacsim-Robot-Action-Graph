@@ -40,7 +40,3 @@ This action graph publishes camera output from Isaac Sim to ROS 2. The graph adv
 3. **Isaac Create Render Product** connects its **Exec Out** output to the execution input of **ROS2 Camera Helper**.
 4. **ROS2 Context** connects its **Context** output to the **Context** input of **ROS2 Camera Helper**.
 5. **Isaac Create Render Product** connects its **Render Product Path** output to the **Render Product Path** input of **ROS2 Camera Helper**.
-
-## Result
-
-With this setup, Isaac Sim publishes camera data through the ROS 2 bridge while the simulation timeline is running. External ROS 2 nodes can subscribe to the configured camera topic and consume the simulated camera stream for perception, visualization, or robot control workflows.
