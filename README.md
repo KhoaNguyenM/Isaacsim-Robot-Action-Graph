@@ -41,3 +41,13 @@ The ROS 2 Camera action graph publishes camera data from Isaac Sim to ROS 2. It 
 *Figure 4. ROS 2 Camera action graph used to publish camera output from Isaac Sim.*
 
 See the full description in [ROS2_Camera/ROS2_Camera.md](ROS2_Camera/ROS2_Camera.md).
+
+## 5. 3D Lidar
+
+The ROS 2 3D Lidar action graph publishes simulated Lidar point cloud data from Isaac Sim to ROS 2. It uses the playback tick, ROS 2 context, QoS profile, Lidar point cloud reader, simulation time reader, and point cloud publisher node to send `sensor_msgs/msg/PointCloud2` data through the ROS 2 bridge.
+
+![ROS 2 3D Lidar point cloud action graph in Isaac Sim](3D_Lidar/3D-lidar-point-cloud-ag.png)
+
+*Figure 5. 3D Lidar action graph used to publish point cloud data from Isaac Sim to ROS 2.*
+
+See the full description in [3D_Lidar/3D_Lidar.md](3D_Lidar/3D_Lidar.md).
