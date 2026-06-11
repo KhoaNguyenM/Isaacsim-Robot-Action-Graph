@@ -51,3 +51,13 @@ The ROS 2 3D Lidar action graph publishes simulated Lidar point cloud data from 
 *Figure 5. 3D Lidar action graph used to publish point cloud data from Isaac Sim to ROS 2.*
 
 See the full description in [3D_Lidar/3D_Lidar.md](3D_Lidar/3D_Lidar.md).
+
+## 6. Odometry
+
+The ROS 2 Odometry action graph computes the robot chassis pose and velocity, publishes `nav_msgs/msg/Odometry`, and broadcasts the matching TF transforms. It combines the physics step trigger, simulation time, ROS 2 context, odometry computation, odometry publisher, and transform tree publishers.
+
+![ROS 2 odometry and TF action graph in Isaac Sim](ROS2_Odometry/Ros2_Odom.png)
+
+*Figure 6. ROS 2 Odometry action graph used to publish ground-truth odometry and the robot TF tree.*
+
+See the full description in [ROS2_Odometry/ROS2_Odometry.md](ROS2_Odometry/ROS2_Odometry.md).
