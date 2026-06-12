@@ -108,7 +108,6 @@ The odometry path remains conceptually the same: compute chassis odometry, publi
 - **TF lookup fails**: Ensure the raw TF frame IDs exactly match the odometry frame IDs and that all publishers use simulation timestamps.
 - **Robot appears twice or jumps in RViz2**: Look for duplicate publishers of `odom -> base_link` or `map/world -> odom`.
 - **Child links are missing**: Set the correct articulation root or explicitly add the required links to **Target Prims**.
-- **Velocity direction is wrong**: Check **Robot Front** and whether **Publish Raw Velocities** matches the frame of the connected velocity values.
 - **Timestamps do not match sensor data**: Feed **Isaac Read Simulation Time** to every publisher and publish `/clock` for ROS 2 nodes configured with `use_sim_time`.
 
 ## References
